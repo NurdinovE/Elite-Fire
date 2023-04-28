@@ -1,0 +1,3 @@
+$('.readySolutionsSlider').slick({
+    dots: true
+});

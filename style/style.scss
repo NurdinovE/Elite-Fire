@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -39,8 +39,8 @@ body {
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
-      line-height: 70px;
-      letter-spacing: 0.105em;
+      line-height: 63px;
+      letter-spacing: 2px;
       color: #FFFFFF;
     }
 
@@ -97,85 +97,95 @@ body {
 
 .productInfo {
   display: flex;
+  margin-top: 55px;
+}
 
-  aside {
-    .productTitle {
-      font-family: 'Lab Grotesque';
-      font-style: normal;
-      font-weight: 250;
-      font-size: 64px;
-      line-height: 80px;
-      /* or 125% */
+aside {
+  .productTitle {
+    font-family: 'Lab Grotesque';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 64px;
+    line-height: 80px;
+    /* or 125% */
 
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
-      background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .productPrice {
-      margin-top: 30px;
-      font-family: 'Lab Grotesque';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 40px;
-      letter-spacing: 0.05em;
-      color: #FFCF7A;
-    }
+  .productPrice {
+    margin-top: 30px;
+    font-family: 'Lab Grotesque';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 37px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #FFCF7A;
 
-    .productIcons {
-      display: flex;
-      margin-top: 80px;
-
-      .productionIcon {
-        margin-right: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        span {
-          display: block;
-          width: 100px;
-          font-family: 'Lab Grotesque';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 22px;
-          /* or 157% */
-          text-align: center;
-          color: #FFFFFF;
-        }
-      }
+    span {
+      font-size: 18px;
     }
   }
 
-  .fireplace {
-    position: relative;
-    right: 150px;
+  .productIcons {
+    display: flex;
+    margin-top: 80px;
 
-    .fireplaceBlur {
-      position: absolute;
-      z-index: -1;
-      width: 201.18px;
-      height: 87.88px;
-      left: 240px;
-      top: 70px;
-      background: #FFCF7A;
-      filter: blur(50px);
-      border-radius: 500px;
-      transform: rotate(161.87deg);
-    }
+    .productionIcon {
 
-    img {
-      width: 700px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      align-items: center;
+
+      span {
+        display: block;
+        width: 119px;
+        font-family: 'Lab Grotesque';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+        /* or 157% */
+        text-align: center;
+        color: #FFFFFF;
+      }
     }
   }
 }
 
+.fireplace {
+  position: relative;
+  right: 150px;
+
+  .fireplaceBlur {
+    position: absolute;
+    z-index: -1;
+    width: 201.18px;
+    height: 87.88px;
+    left: 240px;
+    top: 70px;
+    background: #FFCF7A;
+    filter: blur(50px);
+    border-radius: 500px;
+    transform: rotate(161.87deg);
+  }
+
+  img {
+    width: 700px;
+  }
+}
+
+
 #firePlaceInfo {
+  margin-top: 188px;
+
   .firePlaceInfoTitle {
     width: 700px;
     margin: 0 auto;
@@ -258,13 +268,15 @@ body {
   }
 
   .advantagesIcons {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     .advantagesIcon {
       display: flex;
       align-items: center;
+      width: 280px;
 
       img {
         margin-right: 30px;
@@ -374,6 +386,8 @@ body {
 }
 
 .smartFireplace {
+  margin-top: -155px;
+
   .smartTitle {
     display: flex;
     align-items: center;
@@ -392,7 +406,7 @@ body {
     text-fill-color: transparent;
 
     span {
-      margin: 0 20px;
+      margin: 0 40px;
       display: block;
       width: 40px;
       height: 1px;
@@ -401,8 +415,8 @@ body {
   }
 
   .smartDescr {
-    width: 480px;
-    margin: 15px auto 0;
+    width: 500px;
+    margin: 30px auto 0;
     font-family: 'Lab Grotesque';
     font-style: normal;
     font-weight: 300;
@@ -415,6 +429,9 @@ body {
 
   .smartImg {
     width: 100%;
+    position: relative;
+    margin-top: -49px;
+    z-index: -1;
 
     img {
       width: 100%;
@@ -655,6 +672,7 @@ body {
       }
 
       .accessories {
+        margin-top: 100px;
         .accessotiesTitle {
           font-family: 'Lab Grotesque';
           font-style: normal;
@@ -697,7 +715,9 @@ body {
   .catalogButton {
     text-align: center;
 
+
     button {
+      cursor: pointer;
       background-image: linear-gradient(to right top, #fc1d1d, #f76724, #f2903e, #eeb265, #eccf94);
       outline: none;
       border: none;
@@ -891,7 +911,7 @@ body {
         margin-left: 25px;
         margin-bottom: 40px;
 
-        .readySolutionsSlider {
+        .readySolutionsSlider2 {
           .slick-prev::before {
             content: 'ᐸ';
           }
@@ -951,6 +971,7 @@ body {
           }
 
           span:before {
+            cursor: pointer;
             content: " ";
             color: white;
             display: inline-block;
@@ -971,6 +992,7 @@ body {
             background-color: rgba(255, 207, 122, 1);
             color: black;
             display: flex;
+            cursor: pointer;
             align-items: center;
             justify-content: center;
             font-size: 18px;
@@ -1030,6 +1052,8 @@ body {
 
     .formButtonBtn {
       margin: auto 0;
+      cursor: pointer;
+
       background-image: linear-gradient(to right top, #fc1d1d, #f76724, #f2903e, #eeb265, #eccf94);
       outline: none;
       border: none;
@@ -1119,6 +1143,7 @@ body {
     }
 
     .footerBtn {
+      cursor: pointer;
       margin-top: 30px;
       border: 1px solid #CEB787;
       border-radius: 2px;

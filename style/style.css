@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -38,8 +38,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 70px;
-  letter-spacing: 0.105em;
+  line-height: 63px;
+  letter-spacing: 2px;
   color: #FFFFFF;
 }
 .headerInfo .logo .logoSubText {
@@ -84,8 +84,10 @@ body {
 
 .productInfo {
   display: flex;
+  margin-top: 55px;
 }
-.productInfo aside .productTitle {
+
+aside .productTitle {
   font-family: "Lab Grotesque";
   font-style: normal;
   font-weight: 250;
@@ -98,43 +100,48 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.productInfo aside .productPrice {
+aside .productPrice {
   margin-top: 30px;
   font-family: "Lab Grotesque";
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 37px;
   line-height: 40px;
   letter-spacing: 0.05em;
   color: #FFCF7A;
 }
-.productInfo aside .productIcons {
+aside .productPrice span {
+  font-size: 18px;
+}
+aside .productIcons {
   display: flex;
   margin-top: 80px;
 }
-.productInfo aside .productIcons .productionIcon {
-  margin-right: 100px;
+aside .productIcons .productionIcon {
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
   align-items: center;
 }
-.productInfo aside .productIcons .productionIcon span {
+aside .productIcons .productionIcon span {
   display: block;
-  width: 100px;
+  width: 119px;
   font-family: "Lab Grotesque";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  margin-top: 10px;
   /* or 157% */
   text-align: center;
   color: #FFFFFF;
 }
-.productInfo .fireplace {
+
+.fireplace {
   position: relative;
   right: 150px;
 }
-.productInfo .fireplace .fireplaceBlur {
+.fireplace .fireplaceBlur {
   position: absolute;
   z-index: -1;
   width: 201.18px;
@@ -146,10 +153,13 @@ body {
   border-radius: 500px;
   transform: rotate(161.87deg);
 }
-.productInfo .fireplace img {
+.fireplace img {
   width: 700px;
 }
 
+#firePlaceInfo {
+  margin-top: 188px;
+}
 #firePlaceInfo .firePlaceInfoTitle {
   width: 700px;
   margin: 0 auto;
@@ -220,13 +230,15 @@ body {
   border-radius: 300px;
 }
 #firePlaceInfo .advantagesIcons {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 #firePlaceInfo .advantagesIcons .advantagesIcon {
   display: flex;
   align-items: center;
+  width: 280px;
 }
 #firePlaceInfo .advantagesIcons .advantagesIcon img {
   margin-right: 30px;
@@ -318,6 +330,9 @@ body {
   color: #FFFFFF;
 }
 
+.smartFireplace {
+  margin-top: -155px;
+}
 .smartFireplace .smartTitle {
   display: flex;
   align-items: center;
@@ -336,15 +351,15 @@ body {
   text-fill-color: transparent;
 }
 .smartFireplace .smartTitle span {
-  margin: 0 20px;
+  margin: 0 40px;
   display: block;
   width: 40px;
   height: 1px;
   background: #949494;
 }
 .smartFireplace .smartDescr {
-  width: 480px;
-  margin: 15px auto 0;
+  width: 500px;
+  margin: 30px auto 0;
   font-family: "Lab Grotesque";
   font-style: normal;
   font-weight: 300;
@@ -356,6 +371,9 @@ body {
 }
 .smartFireplace .smartImg {
   width: 100%;
+  position: relative;
+  margin-top: -49px;
+  z-index: -1;
 }
 .smartFireplace .smartImg img {
   width: 100%;
@@ -563,6 +581,9 @@ body {
   color: whitesmoke;
   background: #121212;
 }
+.compositionBlock .compositionBlockContainer .secondCompositionBlock .accessories {
+  margin-top: 100px;
+}
 .compositionBlock .compositionBlockContainer .secondCompositionBlock .accessories .accessotiesTitle {
   font-family: "Lab Grotesque";
   font-style: normal;
@@ -597,6 +618,7 @@ body {
   text-align: center;
 }
 .catalog .catalogButton button {
+  cursor: pointer;
   background-image: linear-gradient(to right top, #fc1d1d, #f76724, #f2903e, #eeb265, #eccf94);
   outline: none;
   border: none;
@@ -762,24 +784,24 @@ body {
   margin-left: 25px;
   margin-bottom: 40px;
 }
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .slick-prev::before {
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .slick-prev::before {
   content: "ᐸ";
 }
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .slick-prev::before,
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .slick-next::before {
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .slick-prev::before,
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .slick-next::before {
   display: block;
   color: #fFCF7A;
   font-weight: 400;
   font-size: 10px;
   transform: scale(1.5, 3);
 }
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .slick-next::before {
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .slick-next::before {
   content: "ᐳ";
 }
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .exmaple {
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .exmaple {
   height: 60px;
 }
-.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider .slick-dots li button:before {
+.form .formBox .formBoxInputs .formBoxInputsPanelBlock .readySolutionsSlider2 .slick-dots li button:before {
   content: "_";
   top: -10px;
   font-size: 37px;
@@ -808,6 +830,7 @@ body {
   display: none;
 }
 .form .formBox .formBoxInputs .formBoxInputsCheckboxBlock label span:before {
+  cursor: pointer;
   content: " ";
   color: white;
   display: inline-block;
@@ -828,6 +851,7 @@ body {
   background-color: rgb(255, 207, 122);
   color: black;
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -871,6 +895,7 @@ body {
 }
 .form .formInfo .formButtonBtn {
   margin: auto 0;
+  cursor: pointer;
   background-image: linear-gradient(to right top, #fc1d1d, #f76724, #f2903e, #eeb265, #eccf94);
   outline: none;
   border: none;
@@ -945,6 +970,7 @@ body {
   color: #FFFFFF;
 }
 .footer .footerBody .footerBtn {
+  cursor: pointer;
   margin-top: 30px;
   border: 1px solid #CEB787;
   border-radius: 2px;
